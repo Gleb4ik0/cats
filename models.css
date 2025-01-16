@@ -1,0 +1,42 @@
+.selCLass{
+    font-family: 'Amatic SC', cursive;
+    text-align: center;
+    font-size: 140%;
+}
+
+.cat-table {
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 2px solid black; /* Верхняя граница */
+    border-bottom: 2px solid black; /* Нижняя граница */
+}
+
+.cat-table th,
+.cat-table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.cat-table th {
+    border-bottom: 1px solid black; /* Граница снизу для заголовков */
+}
+
+.cat-table td {
+    border-top: 1px solid black; /* Граница сверху для каждой ячейки */
+}
+
+.header-row {
+    background-color: rgba(255, 215, 0, 0.5); /* Золотистый цвет с прозрачностью в половину */
+}
+
+.header-row th:not(:first-child) {
+    background-color: lightblue; /* Цвет фона для всех ячеек, кроме первой колонки */
+}
+
+.cat-table img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+

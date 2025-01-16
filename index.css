@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Стили для контейнера с текстом и фоном */
+.text-container {
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('images/catBackground.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px; /* Пример отступов вокруг текста */
+    overflow: hidden;
+    
+}
+
+
+.text-container h2 {
+    text-align: center;
+    
+}
+
+.content-wrapper {
+    display: flex;
+    clear: both;
+    margin-bottom: 20px;
+    display: flex; /* Используем flexbox */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+}
+
+.left-content {
+    flex: 60%;
+    float: left;
+    width: calc(50% - 5px); /* Уменьшаем ширину контейнера на величину отступа */
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+
+.right-content {
+    flex: 30%;
+    float: right;
+    width: calc(50% - 5px); /* Уменьшаем ширину контейнера на величину отступа */
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+.left-content {
+    flex: 50%;
+    float: left; /* Выравнивание текста слева */
+    width: calc(50% - 5px); /* 50% ширины контейнера минус отступ */
+    margin-right: 10px; /* Пример отступа между текстом и изображением */
+    box-sizing: border-box; /* Учитываем отступы внутри ширины элемента */
+    padding-left: 20px; /* Добавляем отступ слева для текста */
+    font-family: 'Amatic SC', cursive;
+    font-size: 160%;
+}
+
+.left-content p::first-line {
+    font-weight: bold;
+}
+
+.right-content img {
+    display: block;
+    max-width: 100%; /* Максимальная ширина изображения будет равна ширине родительского контейнера */
+    height: auto;
+    float: right; /* Выравниваем изображение по правому краю */
+    margin-left: 10px; /* oтступ между текстом и изображением */
+}
+
+.left-content p {
+    margin: 0; /* Убираем отступы для абзацев */
+}
+
+.right-content img {
+    display: block;
+    max-width: 200px; /* Максимальная ширина изображения в пикселях */
+    height: auto;
+    float: right;
+    margin-left: 10px;
+    transform: scale(0.9); 
+}
+
+.additional-row {
+    flex: 10%;
+    margin-top: 20px; /* Отступ сверху */
+    margin-left: 10%; /* Отступ сверху */
+    text-align: center;
+    font-family: 'Amatic SC';
+}
+
+.additional-row p {
+    font-size: 28px; /* Размер шрифта для дополнительного предложения */
+    margin-bottom: 10px; /* Отступ снизу для параграфа */
+}
+
+.additional-row img {
+    max-width: 100px; /* Максимальная ширина для маленького изображения */
+    max-height: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px; /* Отступ сверху для изображения */
+    
+}
+
+
+
+
+/* Стили для основного контента */
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+.gallery-preview {
+    max-width: 100%; /* Максимаьная ширина галереи равна ширине родительского контейнера */
+    overflow: hidden; /* Скрытие изображений, которые могли бы выйти за пределы контейнера */
+}
+
+.gallery-preview table {
+    width: 100%; /* Ширина таблицы на всю доступную ширину галереи */
+    table-layout: fixed; /* Фиксированная ширина таблицы */
+}
+
+.gallery-preview table img {
+    max-width: 100%; /* Максимальная ширина изображения равна ширине таблицы */
+    height: auto; /* Автоматический расчет высоты на основе ширины */
+    border: 2px solid; /* Устанавливаем начальный стиль рамки (обычная рамка) */
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); /* Создаем радужный градиент */
+    border-image-slice: 1; /* Устанавливаем срез рамки равным 1 (тобы градиент был виден) */
+}
+
+
+
+.gallery-preview td {
+    max-width: 100%;
+}
+
+.gallery-preview h2 {
+    font-family: 'Pacifico', cursive; /* Используем шрифт Pacifico */
+    font-size: 24px; /* Размер шрифта */
+    text-align: center; /* Выравниваем текст по центру */
+    color: #333; /* Цвет текста */
+    margin-bottom: 20px; /* Отступ снизу для разделения соседних элементов */
+}
+
+.backForPop {
+    border-radius: 10px; /* Закругленные углы */
+    font-size: 200%;
+    font-family: 'Amatic SC', cursive;
+    text-align: center; /* Центрирование содержимого */
+    padding: 10px; /* Отступы для текста внутри рамки */
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), rgba(255, 165, 0, 0.8), rgba(255, 255, 0, 0.8), rgba(0, 128, 0, 0.8), rgba(0, 0, 255, 0.8), rgba(75, 0, 130, 0.8), rgba(238, 130, 238, 0.8)); /* Радиальный градиент внутри */
+    color: white; /* Цвет текста белый, чтобы было видно на градиентном фоне */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+.bord-image {
+    border-radius: 10px; /* закругления краев */
+}
+

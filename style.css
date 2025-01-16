@@ -1,0 +1,100 @@
+.no-underline {
+    text-decoration: none; /* Убираем подчеркивание */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7e7f2;
+    color: #333;
+    padding: 20px;
+}
+
+
+/* Стили для шапки */
+header {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #72c0d7, #f3deee);
+    padding: 10px 20px; /* Поля вокруг содержимого шапки */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-left {
+    flex-grow: 1; /* Занимает всё доступное пространство слева */
+}
+
+.header-center {
+    text-align: center; /* Выравнивание по центру */
+}
+
+
+header h1 {
+    font-family: 'Arial Rounded MT', sans-serif;
+    font-size: 60px; /* Увеличение размера текста названия */
+    margin: 0;
+}
+
+header h1 span.only {
+    color: #2957ba;
+    font-family: 'Arial Rounded MT', sans-serif;
+    letter-spacing: -2px; /* Уменьшение отступа между буквами */
+    margin-right: 5px; /* Увеличение отступа между словами */
+    
+}
+
+header h1 span.cats {
+    color: #6b87c6; /* Темно-голубой цвет для "Cats" */
+    font-family: 'Great Vibes', cursive; 
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Переключение меню на инлайн-блок */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive; /* Применение шрифта "Great Vibes" к тексту меню */
+    font-size: 30px; /* Увеличение размера текста в меню */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #f3deee, #72c0d7);
+    color: white !important; /* Белый цвет текста */
+    padding: 20px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Стили для ссылок внутри футера */
+footer a {
+    color: white !important; /* Белый цвет текста */
+    text-decoration: none;
+}
+
+/* Стили для ссылок при наведении */
+footer a:hover {
+    text-decoration: underline;
+}
