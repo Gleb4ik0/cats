@@ -1,0 +1,91 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffe6e6; /* нежно розовый цвет */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+button,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+small {
+    color: #999;
+}
+
+button {
+    background-color: #e6c3d4; /* Новый цвет кнопки */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d8437d; /* Цвет кнопки при наведении */
+}
+
+.paw-images {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Отступ от формы */
+}
+
+.paw-image-left,
+.paw-image-right {
+    position: absolute;
+    width: 100px; /* Размер лапки */
+    height: auto;
+}
+
+.paw-image-left {
+    left: 0; /* Расположение левых лапк */
+}
+
+.paw-image-right {
+    right: 0; /* Расположение правых лапок */
+}
+

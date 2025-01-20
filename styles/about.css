@@ -1,0 +1,54 @@
+main {
+    background: linear-gradient(to bottom, #d4f5ff, #f3deee);
+    padding: 20px; /* Внутренний отступ для контента */
+    margin-top: 20px; /* Отступ от шапки */
+    border-radius: 10px; /* Закругляем углы блока с контентом */
+}
+
+h2 {
+    font-family: 'Great Vibes', cursive; /* Используем шрифт Great Vibes для заголовков */
+    font-size: 36px; /* Размер шрифта заголовков */
+    color: #333333c7; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу */
+    text-align: center;
+}
+
+main p {
+    font-family: 'Amatic SC', cursive;
+    font-size: 170%; /* Размер шрифта обычного текста */
+    line-height: 1.6; /* Межстрочный интервал */
+    color: #666; /* Цвет текста */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+/* Выделение для текста */
+main p::selection {
+    background-color: #ffc0cb; /* Розовое выделение */
+    color: #333; /* Цвет текста в выделении */
+}
+
+/* Выделение для заголовков */
+h2::selection {
+    background-color: #ffc0cb; /* Розовое выделение */
+    color: #333; /* Цвет текста в выделении */
+}
+
+.videos {
+    display: flex; /* Располагаем видео в одной строке */
+    justify-content: space-between; /* Распределяем пространство между видео */
+    flex-wrap: wrap; /* Позволяем видео переноситься на следующую строку при необходимости */
+}
+
+.video {
+    width: 48%; /* Устанавливаем ширину видео, чтобы они были в одной строке */
+    margin-bottom: 20px; /* Добавляем отступ снизу для видео */
+}
+
+.video iframe {
+    width: 100%; /* 100% ширина для iframe */
+}
+
+.bgshka {
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(230, 245, 252, 0.8));
+}

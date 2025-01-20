@@ -1,0 +1,34 @@
+.gal__wrap {
+    display: table;
+    width: 100%;
+}
+
+.gal__item {
+    display: table-cell;
+    padding: 0rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.gal__item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid black;
+}
+
+.overlay {
+    display: none;
+}
+
+.over_img {
+    display: none;
+}
+
+.gal {
+	font-family: 'Amatic SC', cursive;
+	text-align: center; 
+	font-size: 180%;
+}
+
+
